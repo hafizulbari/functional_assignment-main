@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover Your Favourite Five Players</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <section class="haeder d-flex justify-content-center mb-5">
+        <div class="container-fluid p-5">
+            <div class="container header-title p-5">
+                <h1 class="text-center text-danger fs-1 fw-bold p-5" style="font-size: 46px;">Discover Your Favourite Five Players</h1>
+                <p class="text-center text-white fs-2" style="font-size: 18px;">
+                    It is scheduled to take place in Qatar from 20 November to 18 December 2022. This will be the first
+                    World Cup ever to be held in the Arab world.As we count down to the start of the global showpiece in Qatar on 20 November, FIFA+ is showcasing 100 of the greatest moments in FIFA World Cup history.
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- header section ends -->
+    <!-- card section starts -->
+    <section class="container-fluid mt-5">
+        <div class="container d-flex my-4">
+            <div class="col-9">
+
+                <div class="d-flex">
+                    <div class="card">
+                        <img src="images/img1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body text-white">
+                            <h2 class="card-title fs-1" id="first-player">Lionel Messi</h2>
+                            <p class="card-text">360 Goals . 120 Assist</p>
+
+
+                            <button type="button" class="btn btn-primary w-100" id="btn-select-name1"
+                                name="playerOne">SELECT</button>
+                        </div>
+                    </div>
+                    <div class="card mx-4">
+                        <img src="images/neymer.jpg" class="card-img-top" alt="...">
+                        <div class="card-body text-white">
+                            <h2 class="card-title fs-1" id="second-player">Neymar Jr</h2>
+                            <p class="card-text">308 Goals . 300 Assist.</p>
+                            <button type="button" class="btn btn-primary w-100" id="btn-select-name2"
+                                name="playerTwo">SELECT</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="images/ronaldo.jpg" class="card-img-top" alt="...">
+                        <div class="card-body text-white">
+                            <h2 class="card-title fs-1" id="third-player">Ronaldo</h2>
+                            <p class="card-text">606 Goals . 813 Assist</p>
+                            <button type="button" class="btn btn-primary w-100" id="btn-select-name3"
+                                name="playerThree">SELECT</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-3 text-white mx-4" style="background-color: #0D0D0D;">
+                <h3 class="m-4 fs-1 text-center">Selected - V</h3>
+                <ol class="mx-5 fs-3" id="insert-ol">
+
+                </ol>
+            </div>
+
+        </div>
+        <!-- 2nd row -->
+        <section class="second container d-flex">
+
+            <div class="col-9 d-flex">
+                <div class="card" style="max-height:470px;">
+                    <img src="images/kylian.jpg" class="card-img-top" alt="...">
+                    <div class="card-body text-white">
+                        <h2 class="card-title fs-1" id="fourth-player">Kylian Mbappé</h2>
+                        <p class="card-text">200 Goals . 180 Assist</p>
+                        <button type="button" class="btn btn-primary w-100" id="btn-select-name4">
+                            SELECT</button>
+                    </div>
+                </div>
+                <div class="card mx-4" style="max-height:470px;">
+                    <img src="images/vitor.jpg" class="card-img-top" alt="...">
+                    <div class="card-body text-white">
+                        <h2 class="card-title fs-1" id="fifth-player">Vitor Machado</h2>
+                        <p class="card-text">273 Goals . 170 Assist</p>
+                        <button type="button" class="btn btn-primary w-100" id="btn-select-name5">
+                            SELECT</button>
+                    </div>
+                </div>
+                <div class="card" style="max-height:470px;">
+                    <img src="images/sergio-ramos.jpg" class="card-img-top" style="min-height: 300px;" alt="...">
+                    <div class="card-body text-white">
+                        <h2 class="card-title fs-1" id="sixth-player">Sergio Ramos</h2>
+                        <p class="card-text">360 Goals . 120 Assist</p>
+                        <button type="button" class="btn btn-primary w-100" id="btn-select-name6">
+                            SELECT</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-3 text-white mx-4 text-center" style="background-color: #0D0D0D;">
+                <h3 class="m-4 fs-1">Budget</h3>
+                <!-- per player cost -->
+                <div class="row g-3">
+                    <div class="d-flex">
+                        <label class="mx-3 py-2 w-25">Per Player</label>
+                        <input type="text" class="w-50 py-2 text-white" id="per-player-cost"
+                            style="background-color: #0D0D0D;">
+                    </div>
+                </div>
+                <!--first calculation -->
+                <div class="my-5">
+                    <button type="button" class="btn btn-primary w-100" id="btn-calculate">Calculate</button>
+                </div>
+                <!-- player expense -->
+                <div class="d-flex">
+                    <label class="mx-3 py-2 w-50">Player Expense</label>
+                    <input type="text" class="text-white w-50 py-2" id="player-cost" style="background-color: #0D0D0D;">
+                </div>
+                <!-- manager expense -->
+                <div class="d-flex my-2">
+                    <label class="mx-3 py-2 w-25">Manager</label>
+                    <input type="text" class="text-white w-50 py-2" id="manager-expense"
+                        style="background-color: #0D0D0D;">
+                </div>
+                <!-- coach expense -->
+                <div class="d-flex">
+                    <label class="mx-3 py-2 w-25">Coach</label>
+                    <input type="text" class="text-white w-50 py-2" id="coach-expense"
+                        style="background-color: #0D0D0D;">
+                </div>
+
+                <!-- Total calculation -->
+                <div class="my-3">
+                    <button type="button" class="btn btn-primary w-100" id="btn-calculate-total">Calculate
+                        Total</button>
+                </div>
+
+                <!-- total amount -->
+                <div class="d-flex" style="margin-bottom:50px;">
+                    <label class="mx-3 py-2 w-25">Total</label>
+                    <input type="text" class="text-white w-50 py-2" id="total-cost" style="background-color: #0D0D0D;">
+                </div>
+
+            </div>
+
+        </section>
+    </section>
+    <section class="footer border-top">
+        <div class="py-4">
+            <p class="text-center text-white my-2">copyright@2022 All Rights Reserved</p>
+        </div>
+
+    </section>
+
+
+
+    <!-- card section ends -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/utilities.js"></script>
+    <script src="js/append.js"></script>
+    <script src="js/budget.js"></script>
+</body>
+
+</html>
